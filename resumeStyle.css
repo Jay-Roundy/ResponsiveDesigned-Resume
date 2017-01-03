@@ -1,0 +1,95 @@
+/* Resume Stylesheet Jason Roundy 6/24/16 */
+
+/*necessary styling for mobile*/
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"]{
+	float: left;
+	width: 100%
+}
+
+.row:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+/* general element css default and mobile*/
+header, footer, nav, article, section, aside {
+	display: block;
+}
+
+body {
+	padding: 1em 2em 1em 2em;
+	font-size: 70%;
+	background-color: #FFFF99;
+}
+
+h2, ul#contactInfo {
+	text-align: center;
+}
+
+ul#contactInfo li {
+	display:inline;
+}
+
+li {
+	margin-bottom: .5em;
+}
+
+h3, h2 {
+	color: #00CC00;
+}
+
+/*For tablets (portrait) – greater than 440px and less than 768px width*/
+@media screen and (min-width: 441px) {
+	body {
+		font-size: 80%;
+	}
+
+	.col-m-1 {width: 8.33%;}
+	.col-m-2 {width: 16.66% }
+	.col-m-3  {width: 25%}
+	.col-m-4  {width: 33.33%}
+	.col-m-5  {width: 41.66%}
+	.col-m-6  {width: 50%}
+	.col-m-7  {width: 58.33%}
+	.col-m-8  {width: 66.66%}
+	.col-m-9  {width: 75%}
+	.col-m-10  {width: 83.33%}
+	.col-m-11  {width: 91.66%}
+	.col-m-12  {width: 100%}
+}
+
+/*For desktops and laptops--minimum 768px width*/
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 100%;
+	}
+
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66% }
+	.col-3  {width: 25%}
+	.col-4  {width: 33.33%}
+	.col-5  {width: 41.66%}
+	.col-6  {width: 50%}
+	.col-7  {width: 58.33%}
+	.col-8  {width: 66.66%}
+	.col-9  {width: 75%}
+	.col-10  {width: 83.33%}
+	.col-11  {width: 91.66%}
+	.col-12  {width: 100%}
+}
+
+/*For print media*/
+@media print {
+	*, body, h2, h3 {
+		color: black;
+		background-color: white;
+		font-size: 100%;
+	}
+	
+	.col-6  {width: 50%}
+}
